@@ -1,8 +1,8 @@
 
-from tensorflow.keras.utils import conv_utils
-from tensorflow.keras import backend as K
-from tensorflow.keras.engine import InputSpec
-from tensorflow.keras.layers import Conv2D
+from keras.utils import conv_utils
+from keras import backend as K
+from keras.engine import InputSpec
+from keras.layers import Conv2D
 
 
 class PConv2D(Conv2D):
