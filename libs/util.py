@@ -35,3 +35,7 @@ def random_mask(height, width, channels=3):
         cv2.ellipse(img, (x1,y1), (s1,s2), a1, a2, a3,(1,1,1), thickness)
     
     return 1-img
+
+def green_mask(height, width, channels=3,img_og):
+    img_mask = cv2.inRange(img_og, (0,255,0), (0,255,0))
+    return 1- img_mask
