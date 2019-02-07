@@ -36,6 +36,6 @@ def random_mask(height, width, channels=3):
     
     return 1-img
 
-def green_mask(height, width, channels=3,img_og):
+def green_mask(img_og):
     img_mask = cv2.inRange(img_og, (0,255,0), (0,255,0))
     return 1- img_mask
