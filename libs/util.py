@@ -38,7 +38,7 @@ def random_mask(height, width, channels=3):
 
 def green_mask(img_og,height, width, channels=3):
     img_mask = np.zeros((height, width, channels), np.uint8)
-    img_mask2 = cv2.inRange(img_og, (255,255,255), (255,255,525))
+    img_mask2 = cv2.inRange(img_og, (0,254,0), (0,255,0))
     img_mask[:,:,0] = img_mask2
     img_mask[:,:,1] = img_mask2
     img_mask[:,:,2] = img_mask2
