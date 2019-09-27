@@ -6,13 +6,13 @@ import os
 import numpy as np
 from datetime import datetime
 
-from keras.models import Model
-from keras.models import load_model
-from keras.optimizers import Adam
-from keras.layers import Input, Conv2D, UpSampling2D, Dropout, LeakyReLU, BatchNormalization, Activation
-from keras.layers import Concatenate
-from keras.applications import VGG16
-from keras import backend as K
+from tf.keras.models import Model
+from tf.keras.models import load_model
+from tf.keras.optimizers import Adam
+from tf.keras.layers import Input, Conv2D, UpSampling2D, Dropout, LeakyReLU, BatchNormalization, Activation
+from tf.keras.layers import Concatenate
+from tf.keras.applications import VGG16
+from tf.keras import backend as K
 from libs.pconv_layer import PConv2D
 
 
